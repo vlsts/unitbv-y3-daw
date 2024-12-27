@@ -1,11 +1,17 @@
 import { writable } from "svelte/store";
 
-async function fetchCountries(): Promise<object[]> {
-    let result = (await fetch("https://restcountries.com/v3.1/all?fields=name")).json()
-
-    return result;
+function fetchCountries(): Promise<object[]> {
+    return fetch("https://restcountries.com/v3.1/all?fields=name")
+        .then(response => response.json())
 }
 
-let countries = writable(await fetchCountries());
+let countries = writable<object[]>();
+
+export function init() {
+    fetchCountries()
+        .then(countriesJSON => {
+            countries.set(countriesJSON)
+        })
+}
 
 export default countries;

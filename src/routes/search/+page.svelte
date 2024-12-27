@@ -1,5 +1,5 @@
 <script lang="ts">
-    import countries from "$lib/storage/countryNameStore"
+    import countries, { init } from "$lib/storage/countryNameStore"
     import { onMount } from "svelte";
 
     let countriesWritten: object[];
@@ -7,7 +7,10 @@
     const unsubscribe = countries.subscribe(val => countriesWritten = val);
 
 
-    onMount(() => () => unsubscribe());
+    onMount(() => {
+        init()
+        return () => unsubscribe()
+    });
 </script>
 
 <div>{JSON.stringify(countriesWritten)}</div>
