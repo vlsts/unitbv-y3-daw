@@ -16,8 +16,8 @@
 	<NavHamburger />
 	<NavUl>
 		<NavLi href="/">Home</NavLi>
-		<NavLi href="/about">Search</NavLi>
-		<NavLi href="/docs/components/navbar">Info</NavLi>
+		<NavLi href="/search">Search</NavLi>
+		<NavLi href="/info">Info</NavLi>
 	</NavUl>
 </Navbar>
 
