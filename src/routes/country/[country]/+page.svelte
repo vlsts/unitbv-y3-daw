@@ -81,7 +81,7 @@
 			{/if}
 			<div class="absolute inset-0 flex items-center justify-center">
 				<div class="text-center">
-					<h1 class="text-4xl font-bold mb-4 dark:text-gray-white">
+					<h1 class="text-4xl font-bold mb-4 dark:text-white">
 						{$country!.name.common}
 					</h1>
 					<div class="flex gap-2 justify-center">
