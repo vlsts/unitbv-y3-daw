@@ -1,0 +1,8 @@
+node_modules/**
+.github/
+.svelte-kit/
+.containerIgnore
+.gitignore
+bun.lockb
+Containerfile
+README.md
