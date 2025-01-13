@@ -1,6 +1,6 @@
 <script>
 	import { Button, Card } from 'flowbite-svelte';
-	import { DownloadOutline, InfoCircleOutline, SearchOutline } from 'flowbite-svelte-icons';
+	import { InfoCircleOutline, MailBoxOutline, SearchOutline } from 'flowbite-svelte-icons';
 </script>
 
 <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -25,7 +25,7 @@
 				App Information
 			</Button>
 			<Button href="/contact" size="xl" color="green">
-				<DownloadOutline class="w-5 h-5 mr-2" />
+				<MailBoxOutline class="w-5 h-5 mr-2" />
 				Contact
 			</Button>
 		</div>
