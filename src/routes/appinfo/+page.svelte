@@ -41,6 +41,16 @@
 						UI component library + Icons
 					</p>
 				</div>
+                <div class="flex flex-col items-center p-4 col-span-1 sm:col-span-2">
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+						alt="Tailwind CSS"
+						class="w-12 h-12 mb-2" />
+					<h3 class="font-bold mb-1">Tailwind CSS</h3>
+					<p class="text-sm text-center text-gray-600 dark:text-gray-400">
+						Easy component styling
+					</p>
+				</div>
 			</Card>
 
 			<!-- Backend Section - Unchanged -->
